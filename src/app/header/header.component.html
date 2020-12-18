@@ -1,0 +1,49 @@
+  <div id="div_container">
+
+ 
+
+    <div id="div_container2">
+      <div id="div_container2_1">
+       </div>
+      <div id="div_container2_1">
+
+      </div>
+    </div>
+
+    <div id="div_container3">
+
+    </div>
+
+    <div id="div_container4">
+      <div id="div_container4_2" *ngIf = "!userIsAuthenticated">
+        <div id="div_container4_2_1" >
+          <a mat-button routerLink="/auth/login" routerLinkActive="mat-accent">Login </a>
+        </div>
+        <div id="div_container4_2_2">
+          <a>|</a>
+        </div>
+        <div id="div_container4_2_3" >
+          <a mat-button routerLink="/auth/signup" routerLinkActive="mat-accent">Signup</a>
+        </div>
+      </div>
+      <div id="div_container4_3" *ngIf = "userIsAuthenticated">
+        <div id="div_container4_3_1" >
+          <a mat-button routerLink="/script" routerLinkActive="mat-accent">Create Script</a>
+        </div>
+        <div id="div_container4_3_2">
+          <a>|</a>
+        </div>
+        <div id="div_container4_3_3" >
+          <a mat-button routerLink="/profile" routerLinkActive="mat-accent">My Profile</a>
+        </div>
+        <div id="div_container4_3_4">
+          <a>|</a>
+        </div>
+        <div id="div_container4_3_5" >
+          <button mat-button (click)="onLogout()">Logout</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+

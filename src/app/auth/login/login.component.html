@@ -1,0 +1,33 @@
+<body>
+
+
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <div id="circle">
+    Please login and follow the guide!
+  </div>
+  <form (submit)="onLogin(loginForm)" #loginForm="ngForm" *ngIf="!isLoading">
+    <div id="reminder" style="display: flex; margin-left: 9vw; font-size: 1.5vw;">
+      <div style="color: #707070;">New to this site?</div>
+      <div style="color: #1AC3C3; margin-left: 1vw;" routerLink="/auth/signup">Sign up!</div>
+    </div>
+    <div class="input_container">
+        <input matInput name="email" ngModel type="email" placeholder="E-Mail" #emailInput="ngModel" required email> <br/>
+        <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
+    </div>
+    <div class="input_container">
+        <input type="password" name="password" ngModel matInput placeholder="Password*" #passwordInput="ngModel" required> <br/>
+        <mat-error *ngIf="passwordInput.invalid">Please enter a valid password.</mat-error>
+    </div>
+    <button mat-raised-button type="submit" *ngIf="!isLoading">Login</button>
+  </form>
+
+</mat-card>
+<div id="div_container">
+
+
+  <div id="div_container3">
+  </div>
+
+</div>
+</body>

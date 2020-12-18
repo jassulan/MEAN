@@ -1,0 +1,85 @@
+:host {
+  display: block;
+}
+
+mat-paginator {
+  margin-top: 1rem;
+}
+
+body {
+  width: 100vw;
+}
+
+#img1 {
+  margin-top: 2.5vw;
+  width: 100vw;
+  height: 35vw;
+}
+
+#welcome {
+  color: #1AC3C3;
+  margin-top: 4vw;
+}
+
+p {
+  line-height: 3vw;
+  margin-bottom: 4vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  color: #707070;
+  font-size: 2vw;
+}
+
+
+
+#getStarted {
+  margin-top: 200px;
+  margin-left: 180px;
+  margin-right: 180px;
+  text-align: center;
+  background-color: #42A0D1;
+  color: white;
+  padding: 25px;
+}
+
+button {
+  margin-top: 30px;
+  margin-left: 42vw;
+  height: 80px;
+  width: 17vw;
+  color: white;
+  font-size: 30px;
+  background-color: #1AC3C3;
+
+  border: none;
+}
+
+#div_container {
+  width: 100vw;
+  display: flex;
+  margin-top: 120px;
+  padding-bottom: 35px;
+
+}
+
+
+#img2 {
+  height: 125px;
+  width: 8.6vw;
+  margin-left: 3.5vw;
+
+}
+
+#div_container2 {
+  width: 30vw;
+  margin-left: 24vw;
+}
+
+#div_container2_1{
+  margin-left: 2.78vw;
+  margin-top: 70px;
+  font-size: 20px;
+  color: #374F86;
+}
+
+

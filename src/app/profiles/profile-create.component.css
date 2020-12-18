@@ -1,0 +1,118 @@
+
+body {
+  width: 100vw;
+}
+
+mat-card {
+  margin-left: 4vw;
+  margin-right: 4vw;
+  background-color: #EDE1E1;
+  display: flex;
+  width: 92vw;
+  height: 37vw;
+}
+
+.image-preview {
+  width: 27vw;
+  height: 27vw;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 8vw;
+  margin-top: 2vw;
+}
+
+.image-preview img {
+  width: 27vw;
+  height: 27vw;
+  border-radius: 50%;
+}
+
+#pick_picture{
+  color: white;
+  background-color: #1AC3C3;
+  margin-left: 14vw;
+  margin-top: 2.25vw;
+  height: 4vw;
+  width: 15vw;
+  font-size: 2vw;
+  border-style: none;
+}
+
+
+
+input[type="file"] {
+  visibility: hidden;
+}
+
+
+form {
+  margin-right: 7vw;
+  padding: 0%;
+  margin-top: 1vw;
+  height: 32vw;
+  width: 50vw;
+  text-align: center;
+}
+
+.input_container {
+  margin-top: 1.5vw;
+
+}
+
+input {
+  width: 40vw;
+  height: 4vw;
+  font-size: 2vw;
+  text-align: center;
+
+}
+
+input::-webkit-input-placeholder {position:relative;}
+
+#save {
+  color: white;
+  background-color: #1AC3C3;
+  margin-top: 1.5vw;
+  height: 4vw;
+  width: 15vw;
+  font-size: 2vw;
+  border-style: none;
+}
+
+#div_container {
+  width: 100vw;
+  display: flex;
+  margin-top: 8.333vw;
+  padding-bottom: 2.431vw;
+
+}
+
+
+#img2 {
+  height: 125px;
+  width: 8.6vw;
+  margin-left: 3.5vw;
+
+}
+
+#div_container2 {
+  width: 30vw;
+  margin-left: 24vw;
+}
+
+#div_container2_1{
+  margin-left: 2.78vw;
+  margin-top: 70px;
+  font-size: 20px;
+  color: #374F86;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+
+
+
+
+

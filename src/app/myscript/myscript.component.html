@@ -1,0 +1,590 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+
+<P class="blocktext">
+  <mat-horizontal-stepper linear="true" #stepper>
+
+    <mat-step [stepControl]="firstFormGroup">
+
+      <ng-template matStepLabel>
+        <div id="step">
+          Step 1
+        </div>
+      </ng-template>
+
+
+      <div style="position:relative;width:98vw;height:36vw;margin-top: 2vw;">
+
+        <img src="images/national-cancer-institute-zz_3tCcrk7o-unsplash.png" alt="" style="width:98vw; height:36vw; border: none;">
+
+        <form id="step1_form"   [formGroup]="firstFormGroup">
+
+          <div id="container1">
+            <div id ="container1_1">
+              This module allows you to understand common PET/MR processing metrics used to align images prior to implementing any analytical techniques.
+            </div>
+
+            <div id="container1_2">
+
+              <div id="container1_2_1">
+                <div id="circle1">
+                  1
+                </div>
+                <div id="question1">
+                  What pathology would you like to study?
+                </div>
+              </div>
+
+              <div id="container1_2_2">
+
+                <mat-radio-group #radioGroup1="matRadioGroup" aria-label="Select an option" formControlName="firstCtrl"
+                required>
+
+                <div id="container1_2_2_0">
+
+                    <div id="images_container1">
+                        <div id="images_container1_1">
+                            <img src="images/Alzheimers.png" alt="form.value.name" style="width:13.89vw; height: 13.89vw;">
+                        </div>
+                        <div id="images_container1_2">
+                            <img src="images/HealthyControl.png" alt="form.value.name" style="width:13.89vw; height: 13.89vw;">
+                        </div>
+                    </div>
+
+                    <div id="radio_button_container1">
+                        <div id="radio_button_container1_1">
+                            <mat-radio-button value="Alzheimers">
+                              <div style="font-size: 1.25vw;">Alzheimer's Disease</div>
+                            </mat-radio-button>
+                        </div>
+                        <div id="radio_button_container1_2">
+                            <mat-radio-button value="HealthyControl">
+                              <div style="font-size: 1.25vw;">Healthy Control</div>
+                            </mat-radio-button>
+                        </div>
+                    </div>
+
+                </div>
+
+                </mat-radio-group>
+
+              </div>
+
+            </div>
+          </div>
+
+
+        </form>
+
+      </div>
+
+      <button id="button1" mat-button matStepperNext class="btn btn-primary active">Next</button>
+
+
+
+      <div id="footer">
+
+        <div id="footer1">
+          <img id="footer_img" src="images/Logo.jpg">
+        </div>
+
+        <div id="footer2">
+          <div id="footer2_1">Copyright 2020. All Rights Reserved.</div>
+        </div>
+
+        <div id="footer3">
+        </div>
+
+      </div>
+
+    </mat-step>
+
+        　
+
+
+
+    <mat-step [stepControl]="secondFormGroup" >
+
+      <ng-template matStepLabel>
+        <div id="step">
+          Step 2
+        </div>
+      </ng-template>
+
+
+      <div style="position:relative;width:98vw;height:36vw;margin-top: 2vw;">
+
+        <img src="images/national-cancer-institute-zz_3tCcrk7o-unsplash.png" alt="" style="width:98vw; height:36vw; border: none;">
+
+        <form id="step2_form" [formGroup]="secondFormGroup">
+          <div id="container2">
+            <div id ="container2_1">
+              What GAAIN is: The Global Alzheimer’s Association Interactive Network (GAAIN) has developed the first operational online integrated research platform, which links scientists, shared data, and sophisticated analysis tools.
+            </div>
+
+            <div id="container2_2">
+
+              <div id="container2_2_1">
+                <div id="circle2">
+                  2
+                </div>
+                <div id="question2">
+                  Which data set would you like to study?
+                </div>
+              </div>
+
+              <div id="container2_2_2">
+
+                <mat-radio-group #radioGroup2="matRadioGroup" aria-label="Select an option" formControlName="secondCtrl" required>
+
+                <div id="radio_button_container2">
+
+                  <mat-radio-button value="FBR">
+                    <div class="option2">
+                      <div class="option_number2">1</div>
+                      <div class="option_content2">
+                        GAAIN – Florbetapir
+                      </div>
+                    </div>
+                  </mat-radio-button>
+
+
+                  <mat-radio-button value="PiB">
+                    <div class="option2">
+                      <div class="option_number2">2</div>
+                      <div class="option_content2">
+                        GAAIN - PittsburghBCompund
+                      </div>
+                    </div>
+                  </mat-radio-button>
+
+
+                </div>
+
+                </mat-radio-group>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div style="margin-left: 23vw; margin-top: 3.5vw; font-size: 1.2vw; color: #707070;">*Uploaded by Navitsky et al’s research team via GAAIN Alzheimers Association Portal</div>
+
+        </form>
+      </div>
+
+      <div id="button_container2">
+
+        <div class="triangle-left"></div>
+
+        <button id="button2_1" mat-button matStepperPrevious class="btn btn-primary active">Back</button>
+
+        <div id="button2_2"></div>
+
+        <button id="button2_3" mat-button matStepperNext class="btn btn-primary active">Next</button>
+
+        <div class="triangle-right"></div>
+
+      </div>
+
+      <div id="footer">
+
+        <div id="footer1">
+          <img id="footer_img" src="images/Logo.jpg">
+        </div>
+
+        <div id="footer2">
+          <div id="footer2_1">Copyright 2020. All Rights Reserved.</div>
+        </div>
+
+        <div id="footer3">
+        </div>
+
+      </div>
+
+    </mat-step>
+
+
+
+
+    <mat-step [stepControl]="thirdFormGroup" >
+
+      <ng-template matStepLabel>
+        <div id="step">
+          Step 3
+        </div>
+      </ng-template>
+
+      <div style="position:relative;width:98vw;height:36vw;margin-top: 2vw;">
+
+        <img src="images/national-cancer-institute-zz_3tCcrk7o-unsplash.png" alt="" style="width:98vw; height:36vw; border: none;">
+
+        <form id="step3_form" [formGroup]="thirdFormGroup">
+
+          <div id="container3">
+            <div id ="container3_1">
+              <div class="container3_1"><span style="font-weight: bold;">Re-alignment</span> is characterization and correction of interpolation effects in the realignment of MRI.</div>
+              <div class="container3_1"><span style="font-weight: bold;">Co-registration</span> is to achieve matching of inter-modality intra- subject data.</div>
+              <div class="container3_1"><span style="font-weight: bold;">Normalization</span> is to fit the image to standard space and facilitate inter-subject analyses.</div>
+            </div>
+
+            <div id="container3_2">
+
+              <div id="container3_2_1">
+                <div id="circle3">
+                  3
+                </div>
+                <div id="question3">
+                  Which processing metrics would you like to implement?
+                </div>
+              </div>
+
+              <div id="container3_2_2">
+
+                <mat-radio-group #radioGroup3="matRadioGroup" aria-label="Select an option" formControlName="thirdCtrl" required>
+
+                <div id="radio_button_container3">
+
+                  <mat-radio-button  value="Re-alignment">
+                    <div class="option3">
+                      <div class="option_number3">1</div>
+                      <div class="option_content3">Re-allignment</div>
+                    </div>
+                  </mat-radio-button>
+
+                  <mat-radio-button  value="Co-registration">
+                    <div class="option3">
+                      <div class="option_number3">2</div>
+                      <div class="option_content3">Co-registration</div>
+                    </div>
+                  </mat-radio-button>
+
+                  <mat-radio-button  value="Normalization">
+                    <div class="option3">
+                      <div class="option_number3">3</div>
+                      <div class="option_content3">Normalization</div>
+                    </div>
+
+                  </mat-radio-button>
+
+                </div>
+
+                </mat-radio-group>
+
+              </div>
+
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <div id="button_container3">
+
+        <div class="triangle-left"></div>
+
+        <button id="button3_1" mat-button matStepperPrevious class="btn btn-primary active">Back</button>
+
+        <div id="button3_2"></div>
+
+        <button id="button3_3" mat-button matStepperNext class="btn btn-primary active">Next</button>
+
+        <div class="triangle-right"></div>
+
+      </div>
+
+      <div id="footer">
+
+        <div id="footer1">
+          <img id="footer_img" src="images/Logo.jpg">
+        </div>
+
+        <div id="footer2">
+          <div id="footer2_1">Copyright 2020. All Rights Reserved.</div>
+        </div>
+
+        <div id="footer3">
+        </div>
+
+      </div>
+
+    </mat-step>
+
+
+
+
+    <mat-step [stepControl]="fourthFormGroup" >
+      <ng-template matStepLabel>
+        <div id="step">
+          Step 4
+        </div>
+      </ng-template>
+
+      <div style="position:relative;width:98vw;height:36vw;margin-top: 2vw;">
+
+        <img src="images/national-cancer-institute-zz_3tCcrk7o-unsplash.png" alt="" style="width:98vw; height:36vw; border: none;">
+
+        <form id="step4_form" [formGroup]="fourthFormGroup">
+
+          <div id="container4">
+            <div id ="container4_1">
+              <div class="container4_1"><span style="font-weight: bold;">FSL:</span> Image analysis and statistical tools for functional, structural and diffusion MRI brain imaging data.</div>
+              <div class="container4_1"><span style="font-weight: bold;">SPM:</span> Construction and assessment of spatially extended statistical processes used to test hypotheses about functional imaging data.</div>
+            </div>
+
+            <div id="container4_2">
+
+              <div id="container4_2_1">
+                <div id="circle4">
+                  4
+                </div>
+                <div id="question4">
+                  Which imaging languages would you like to use?
+                </div>
+              </div>
+
+              <div id="container4_2_2">
+
+                <mat-radio-group #radioGroup4="matRadioGroup" aria-label="Select an option" formControlName="fourthCtrl" required>
+                <div id="radio_button_container4">
+
+                  <mat-radio-button  value="FSL">
+                    <div class="option4">
+                      <div class="option_number4">1</div>
+                      <div class="option_content4">FSL</div>
+                    </div>
+                  </mat-radio-button>
+
+                  <mat-radio-button  value="SPM">
+                    <div class="option4">
+                      <div class="option_number4">2</div>
+                      <div class="option_content4">SPM</div>
+                    </div>
+                  </mat-radio-button>
+
+
+
+                </div>
+
+                </mat-radio-group>
+
+              </div>
+
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <div id="button_container4">
+
+        <div class="triangle-left"></div>
+
+        <button id="button4_1" mat-button matStepperPrevious class="btn btn-primary active">Back</button>
+
+        <div id="button4_2"></div>
+
+        <button id="button4_3" mat-button matStepperNext class="btn btn-primary active">Next</button>
+
+        <div class="triangle-right"></div>
+
+      </div>
+
+      <div id="footer">
+
+        <div id="footer1">
+          <img id="footer_img" src="images/Logo.jpg">
+        </div>
+
+        <div id="footer2">
+          <div id="footer2_1">Copyright 2020. All Rights Reserved.</div>
+        </div>
+
+        <div id="footer3">
+        </div>
+
+      </div>
+    </mat-step>
+
+
+
+    <mat-step [stepControl]="fifthFormGroup">
+      <ng-template matStepLabel>
+        <div id="step">
+          Step 5
+        </div>
+      </ng-template>
+
+      <div style="position:relative;width:98vw;height:36vw;margin-top: 2vw;">
+
+        <img src="images/national-cancer-institute-zz_3tCcrk7o-unsplash.png" alt="" style="width:98vw; height:36vw; border: none;">
+
+        <form id="step5_form" [formGroup]="fifthFormGroup">
+
+          <div id="container5">
+            <div id ="container5_1">
+              <div class="container5_1" style="color: #1AC3C3;">Did you know?</div>
+              <div class="container5_1"><span style="font-weight: bold;">The Frontal Lope</span> involved in, problem solving, spontaneity, memory, language, initiation, judgement, impulse control, and social and sexual behavior.</div>
+              <div class="container5_1"><span style="font-weight: bold;">The Cerebellum</span> coordinates voluntary movements such as posture, balance, coordination, and speech, resulting in smooth and balanced muscular activity.</div>
+              <div class="container5_1"><span style="font-weight: bold;">The Cerebellar Gray Matter</span> control muscular and sensory activity.</div>
+            </div>
+
+            <div id="container5_2">
+
+              <div id="container5_2_1">
+                <div id="circle5">
+                  5
+                </div>
+                <div id="question5">
+                  Which areas of the brain would you like to analyze?
+                </div>
+              </div>
+
+              <div id="container5_2_2">
+
+                <mat-radio-group #radioGroup5="matRadioGroup" aria-label="Select an option" formControlName="fifthCtrl" required>
+                <div id="radio_button_container5">
+
+                  <mat-radio-button  value="Frontal-lope">
+                    <div class="option5">
+                      <div class="option_number5">1</div>
+                      <div class="option_content5">Frontal lope</div>
+                    </div>
+                  </mat-radio-button>
+
+                  <mat-radio-button  value="Whole-cerebellum">
+                    <div class="option5">
+                      <div class="option_number5">2</div>
+                      <div class="option_content5">Whole cerebellum</div>
+                    </div>
+                  </mat-radio-button>
+
+                  <mat-radio-button  value="Cerebellar-gray-matter">
+                    <div class="option5">
+                      <div class="option_number5">3</div>
+                      <div class="option_content5">Cerebellar gray matter</div>
+                    </div>
+
+                  </mat-radio-button>
+
+                </div>
+
+                </mat-radio-group>
+
+              </div>
+
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <div id="button_container5">
+
+        <div class="triangle-left"></div>
+
+        <button id="button5_1" mat-button matStepperPrevious class="btn btn-primary active">Back</button>
+
+        <div id="button5_2"></div>
+
+        <button id="button5_3" mat-button matStepperNext class="btn btn-primary active">Next</button>
+
+        <div class="triangle-right"></div>
+
+      </div>
+
+      <div id="footer">
+
+        <div id="footer1">
+          <img id="footer_img" src="images/Logo.jpg">
+        </div>
+
+        <div id="footer2">
+          <div id="footer2_1">Copyright 2020. All Rights Reserved.</div>
+        </div>
+
+        <div id="footer3">
+        </div>
+
+      </div>
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>
+        <div id="step">
+          Download
+        </div>
+      </ng-template>
+
+      <div style="position:relative;width:98vw;height:36vw;margin-top: 2vw;">
+
+        <img src="images/national-cancer-institute-zz_3tCcrk7o-unsplash.png" alt="" style="width:98vw; height:36vw; border: none;">
+
+        <div id="step6_form">
+
+          <div id="container6_1">You Selected the Following:</div>
+
+          <div id="container6_2">
+            <div>Pathology: {{ radioGroup1.value }}</div>
+            <div>Data set: {{ radioGroup2.value }}</div>
+            <div>Processing metrics: {{ radioGroup3.value }}</div>
+            <div>Imaging languages: {{ radioGroup4.value }}</div>
+            <div>Areas of the brain: {{ radioGroup5.value }}</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="button_container6">
+
+        <div class="triangle-left"></div>
+
+        <button id="button6_1" mat-button matStepperPrevious class="btn btn-primary active">Back</button>
+
+        <div id="button6_2_container">
+          <button id="button6_2" mat-button class="btn btn-primary active" (click)="stepper.reset();onResetForm()">Restart</button>
+        </div>
+
+        <div id="button6_3_container">
+          <button id="button6_3" mat-button class="btn btn-primary active" (click)="onGetScript(
+              radioGroup1.value,
+              radioGroup2.value,
+              radioGroup3.value,
+              radioGroup4.value,
+              radioGroup5.value)">
+            Download Script
+          </button>
+          <!--<a [href]="imagePath" target="_blank" rel="noopener noreferrer" *ngIf="imagePath != null">
+            {{ filename }}
+          </a> -->
+        </div>
+
+
+      </div>
+
+      <div id="footer">
+
+        <div id="footer1">
+          <img id="footer_img" src="images/Logo.jpg">
+        </div>
+
+        <div id="footer2">
+          <div id="footer2_1">Copyright 2020. All Rights Reserved.</div>
+        </div>
+
+        <div id="footer3">
+        </div>
+
+      </div>
+
+    </mat-step>
+  </mat-horizontal-stepper>
+</P>

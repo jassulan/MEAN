@@ -1,0 +1,54 @@
+<body>
+
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <div>
+    <div class="image-preview" *ngIf="imagePreview !== '' && imagePreview && form.get('image').valid">
+      <img [src]="imagePreview" [alt]="form.value.name">
+    </div>
+    <div>
+      <button id="pick_picture" mat-stroked-button type="button" (click)="filePicker.click()">Upload Image</button>
+      <input type="file" #filePicker (change)="onImagePicked($event)">
+    </div>
+  </div>
+
+  <form [formGroup]="form" (submit)="onSaveProfile()" *ngIf="!isLoading">
+
+    <div class="input_container">
+      <input matInput type="text" formControlName="name" placeholder="First Name">
+    </div>
+    <div class="input_container">
+      <input matInput type="text" formControlName="surname" placeholder="Last Name">
+    </div>
+
+    <div class="input_container">
+      <input matInput type="email" readonly placeholder="{{userName}}">
+    </div>
+
+    <div class="input_container">
+      <input matInput type="password" placeholder="Current Password*">
+    </div>
+
+    <div class="input_container">
+      <input matInput type="password" placeholder="New Password*">
+    </div>
+
+    <button id="save" mat-raised-button type="submit">Save</button>
+  </form>
+</mat-card>
+<div id="div_container">
+
+  <div id="div_container1">
+    <img id="img2" src="images/Logo.jpg">
+  </div>
+
+  <div id="div_container2">
+    <div id="div_container2_1">Copyright 2020. All Rights Reserved.</div>
+  </div>
+
+  <div id="div_container3">
+  </div>
+
+</div>
+</body>
+

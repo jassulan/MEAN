@@ -1,0 +1,96 @@
+body {
+  width: 100vw;
+}
+
+mat-card {
+  margin-left: 4vw;
+  margin-right: 6vw;
+  background-color: #EDE1E1;
+  display: flex;
+  width: 90vw;
+  height: 30vw;
+}
+
+#circle {
+  color: #374F86;
+  width: 23vw;
+  height: 23vw;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 10vw;
+  margin-top: 3vw;
+  text-align: center;
+  line-height: 23vw;
+  font-size: 1.5vw;
+}
+
+form {
+  margin-top: 2vw;
+  margin-left: 1vw;
+  height: 25vw;
+  width: 50vw;
+  text-align: center;
+}
+
+.input_container {
+  margin-left: 7.5vw;
+  margin-top: 1vw;
+
+}
+
+input {
+  width: 40vw;
+  height: 5vw;
+  font-size: 2vw;
+  text-align: center;
+}
+
+input::-webkit-input-placeholder {position:relative;}
+
+button {
+  color: white;
+  background-color: #1AC3C3;
+  margin-top: 2vw;
+  margin-left: 7vw;
+  height: 5vw;
+  width: 15vw;
+  font-size: 2vw;
+}
+
+#div_container {
+  width: 100vw;
+  display: flex;
+  margin-top: 120px;
+  padding-bottom: 35px;
+
+}
+
+
+#img2 {
+  height: 125px;
+  width: 8.6vw;
+  margin-left: 3.5vw;
+
+}
+
+#div_container2 {
+  width: 30vw;
+  margin-left: 24vw;
+}
+
+#div_container2_1{
+  margin-left: 2.78vw;
+  margin-top: 70px;
+  font-size: 20px;
+  color: #374F86;
+}
+
+
+
+
+
+mat-spinner {
+  margin: auto;
+}
+
+
