@@ -11,7 +11,7 @@ const app = express();
 
 mongoose
   .connect(
-    "mongodb+srv://expert:bfxIyPe2aFbuKa9Z@cluster0.y0v7y.mongodb.net/<dbname>?retryWrites=true&w=majority"
+    "link to database"
   )
   .then(() => {
     console.log("Connected to database!");
